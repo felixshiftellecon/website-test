@@ -25,7 +25,7 @@ jobs:
       - jest/restore-cache
       - run:
           name: index.test.js
-          command: jest
+          command: jest-command
 
 workflows:
   # Below is the definition of your workflow.
