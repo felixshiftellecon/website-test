@@ -21,11 +21,8 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
-      - jest/configure
-      - jest/restore-cache
-      - run:
-          name: index.test.js
-          command: jest-command
+      - run: npm install
+      - run: npm run test
 
 workflows:
   # Below is the definition of your workflow.
